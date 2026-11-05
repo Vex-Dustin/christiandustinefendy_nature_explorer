@@ -39,7 +39,7 @@ class _HomescreenState extends State<Homescreen> {
       body: Column( children: [
         Center(child: Image.network("https://picsum.photos/id/10/200/300", width: 2000, height: 250, fit: BoxFit.cover,)),
         SizedBox(height: 10),
-        Padding(padding: EdgeInsets.all(16),
+        Padding(padding: EdgeInsetsGeometry.all(16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             spacing: 10,
@@ -51,7 +51,7 @@ class _HomescreenState extends State<Homescreen> {
               Column(crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: 10,
                 children: [
-                Text("Discover, Explore, Reconnect", textAlign: TextAlign.left , style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                Text("Discover, Explore, Reconnect", textAlign: TextAlign.left , style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 100, 0))),
                   Text("Discover the beauty of nature through breathtaking landscapes, peaceful forests, and stunning mountain views, Explore remarkable destinations, enjoy the fresh air, and reconnect with the natural world.From quiet lakes to scenic trails, every journey offers a new experience. Let nature inspire your next adventure and create unforgettable memories along the way.", style: TextStyle(fontSize: 20),)
               ],),
               Row(
